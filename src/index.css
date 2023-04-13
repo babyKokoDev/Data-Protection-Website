@@ -53,6 +53,10 @@ button:hover {
     border: 1px solid #47dcff;
 }
 
+span {
+    color: var(--primary-color);
+}
+
 @media screen and (max-width:940px) {
     h1 {
         font-size: 3rem;
