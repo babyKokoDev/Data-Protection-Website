@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital@1&display=swap');
+
+body {
+    font-family: 'Mali', cursive;
+}
+
 :root {
     --primary-color : #0fb8e0;
     --primary-dark : #0d2154;
