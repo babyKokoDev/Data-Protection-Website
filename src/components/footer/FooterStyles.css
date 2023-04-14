@@ -74,6 +74,30 @@
     border-radius: 4px;
 }
 
+.footer form input:focus {
+    color: #333;
+    outline: var(--primary-color);
+    box-shadow: 0 0 8px 0 var(--primary-dark);
+}
+
+.footer form .mail-icon {
+    position: absolute;
+    font-size: 1.4rem;
+    margin: 1rem;
+    right: .2rem;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.footer form .social-icon {
+    margin: 1rem 1rem 1rem 0;
+    padding: .6rem;
+    background-color: var(--primary-dark);
+    border-radius: 4px;
+    color: #f8f8f8;
+    font-size: 3rem;
+}
+
 @media screen and (max-width: 940px) {
     .footer {
         height: 100%;

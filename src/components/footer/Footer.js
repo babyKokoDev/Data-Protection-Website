@@ -3,6 +3,7 @@ import './FooterStyles.css'
 import { SiDatabricks } from 'react-icons/si'
 import { FiDribbble, FiFacebook, FiGithub, FiInstagram, FiLinkedin, FiMail } from 'react-icons/fi'
 import { BsFillArrowUpCircleFill } from 'react-icons/bs'
+import {Link} from 'react-scroll'
 
 const Footer = () => {
   return (
@@ -13,39 +14,43 @@ const Footer = () => {
                     <SiDatabricks className='icon' />
                     <h2>Secured.</h2>
                 </div>
-                <BsFillArrowUpCircleFill className='icon' />
+                <Link activeClass="active" to="home" spy={true} smooth={true} duration={500}>
+                         <BsFillArrowUpCircleFill className='icon' />
+                </Link>
+
+               
             </div>
             <div className="col-container">
                 <div className="col">
-                     <h3>Navigation</h3>
+                     <h3>NAVIGATION</h3>
                      <p>Home</p>
                      <p>Data</p>
                      <p>Cloud</p>
                      <p>Contact</p>
                 </div>
                 <div className="col">
-                     <h3>My Account</h3>
+                     <h3>MY ACCOUNT</h3>
                      <p>Home</p>
                      <p>Data</p>
                      <p>Cloud</p>
                      <p>Contact</p>
                 </div>
                 <div className="col">
-                     <h3>Information</h3>
+                     <h3>INFORMATION</h3>
                      <p>Home</p>
                      <p>Data</p>
                      <p>Cloud</p>
                      <p>Contact</p>
                 </div>
                 <div className="col">
-                     <h3>Legal</h3>
+                     <h3>LEGAL</h3>
                      <p>Home</p>
                      <p>Data</p>
                      <p>Cloud</p>
                      <p>Contact</p>
                 </div>
                 <form action="">
-                    <h3>Join Our Team</h3>
+                    <h3>JOIN OUR TEAM</h3>
                     <input type="email" placeholder='Enter your email' />
                     <FiMail className='mail-icon' />
                     <div className="social-group">
