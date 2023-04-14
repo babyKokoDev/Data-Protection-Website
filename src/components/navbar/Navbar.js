@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './NavbarStyles.css'
 import {SiDatabricks} from 'react-icons/si'
 import {FaBars, FaTimes} from 'react-icons/fa'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -19,10 +20,10 @@ const Navbar = () => {
                 <h1>Secured</h1>
             </div>
             <ul className={nav ? 'nav-menu active' : "nav-menu" }>
-                <li>Home</li>
-                <li>Recovery</li>
-                <li>Cloud</li>
-                <li>Contact</li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/recovery">Recovery</Link></li>
+                <li><Link to="/cloud">Cloud</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
                 <button>Sign in</button>
             </ul>
             <div className="hamburger" onClick={handleNav}>
